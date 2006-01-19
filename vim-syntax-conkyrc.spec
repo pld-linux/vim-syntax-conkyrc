@@ -1,8 +1,7 @@
 %define		_syntax	conkyrc
 %define		_vimdatadir	%{_datadir}/vim/vimfiles
 %define 	_snap	20050923
-
-Summary:	Vim syntax: Highlight code in conky config file 
+Summary:	Vim syntax: Highlight code in conky config file
 Summary(pl):	Opis sk³adni dla Vima: pod¶wietlanie kodu wewnatrz plikow konfiguracyjnych conky'ego.
 Name:		vim-syntax-conkyrc
 Version:	%{_snap}
@@ -13,7 +12,8 @@ Group:		Applications/Editors/Vim
 Source0:	http://vim.sourceforge.net/scripts/download_script.php?src_id=4621
 # Source0-md5:	14af15829b26e101df5e020397fa0536
 URL:		http://vim.sourceforge.net/scripts/script.php?script_id=1367
-Requires:	vim >= 4:6.0
+# for _vimdatadir existence
+Requires:	vim >= 4:6.3.058-3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
