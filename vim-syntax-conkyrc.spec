@@ -13,7 +13,7 @@ Source0:	http://vim.sourceforge.net/scripts/download_script.php?src_id=4621
 # Source0-md5:	14af15829b26e101df5e020397fa0536
 URL:		http://vim.sourceforge.net/scripts/script.php?script_id=1367
 # for _vimdatadir existence
-Requires:	vim >= 4:6.3.058-3
+Requires:	vim-rt >= 4:6.3.058-3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
